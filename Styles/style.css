@@ -17,10 +17,10 @@
 }
 
 :root {
-    --cor-de-fundo: #001253;
-    --cor-de-texto-branca: #f6f6f6;
-    --cor-secundaria: #FD841F;
-    --cor-hover: #3E6D9C ;
+    --cor-de-fundo: #2C3639;
+    --cor-de-texto-branca: #DCD7C9;
+    --cor-secundaria: #A27B5C;
+    --cor-hover: #3F4E4F ;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -71,7 +71,7 @@ body{
 
 .apresentacao{
     display: flex;
-    padding: 0% 15% 0% 8%;
+    padding: 2% 15% 0% 8%;
     align-items: center;
     justify-content: space-between;
 }
@@ -105,7 +105,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 0 0 4% 20%;
+    padding: 0 0 3% 20%;
 
 }
 
@@ -135,7 +135,7 @@ body{
 
 .apresentacao__links__link:hover {
     transform: translateY(-5px);
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
     border: 2px solid var(--cor-secundaria);
 }
 
@@ -143,9 +143,12 @@ body{
     display: flex;
     background-color: var(--cor-secundaria);
     color: var(--cor-de-fundo);
-    padding: 0.5%;
+    padding: 1%;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     justify-content: center;
 }
 
+.pular_linha {
+    color: var(--cor-de-fundo);
+}
