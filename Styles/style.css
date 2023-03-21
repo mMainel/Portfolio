@@ -43,7 +43,7 @@ body{
     border-radius: 10px;
     animation: quadrado 5s  infinite;
     animation-delay: 0ms;
-    background: linear-gradient(var(--cor-secundaria) 60%, var(--cor-de-texto-branca));
+    background: linear-gradient(var(--cor-secundaria) 55%, var(--cor-de-texto-branca));
 }
 
 .cabecalho {
