@@ -38,8 +38,8 @@ body{
 
 .bolinha {
     background: var(--cor-secundaria);
-    width: 10px;
-    height: 10px;
+    width: 0.62rem;
+    height: 0.62rem;
     border-radius: 10px;
     animation: quadrado 5s  infinite;
     animation-delay: 0ms;
@@ -52,14 +52,14 @@ body{
 
 .cabecalho__menu {
     display: flex;
-    gap: 52px;
+    gap: 3.25rem;
 }
 
 .cabecalho__menu__links {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 150%;
     font-weight: 600;
     transition: transform 0.3s ease 0s, color 0.4s;
 }
@@ -80,7 +80,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 598px;
+    width: 50%;
     justify-content: flex-start;
     margin-bottom: 20%;
 }
@@ -88,14 +88,14 @@ body{
 .apresentacao__conteudo__titulo{
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
 }
 
 .apresentacao__conteudo__texto{
     color: var(--cor-de-texto-branca);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -109,10 +109,14 @@ body{
 
 }
 
+.apresentacao__links__img {
+    width: 102%;
+}
+
 .apresentacao__links__titulo {
     color: var(--cor-de-texto-branca);
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -122,13 +126,13 @@ body{
     text-decoration: none;
     font-family: var(--fonte-secundaria);
     text-align: center;
-    width: 378px;
+    width: 70%;
     border: 2px solid var(--cor-secundaria);
     border-radius: 8px;
-    padding: 21.5px 0px;
+    padding: 5.2% 0%;
     justify-content: center;
     gap: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     transition: transform 0.3s ease 0s, color 0.4s;
 }
@@ -147,8 +151,36 @@ body{
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     justify-content: center;
+    width:auto;
 }
 
 .pular_linha {
     color: var(--cor-de-fundo);
+}
+
+@media (max-width: 800px) {
+    .bolinha {
+        background: none;
+        width: 0;
+        height: 0;
+    }
+    .cabecalho {
+        padding: 0% 0% 5% 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+        padding: 5% 0 0 15%;
+    }
+    .rodape {
+        width: auto;
+    }
 }
